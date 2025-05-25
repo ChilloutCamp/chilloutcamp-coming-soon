@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChilloutCamp - Ny Nettside Kommer Snart!</title>
+  <meta name="description"
+    content="En spennende ny nettside for ChilloutCamp er under utvikling! Kontakt oss gjerne i mellomtiden.">
+  <link rel="icon" href="favicon.ico" sizes="any"> <!-- Assumes favicon.ico is in the same folder -->
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"> <!-- Assumes apple-touch-icon.png is in the same folder -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Pacifico&display=swap');
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      /* 👇 BACKGROUND IMAGE - Assumes 'landingpage.webp' is in the SAME FOLDER as this index.html */
+      background-image: linear-gradient(rgba(2, 132, 199, 0.7), rgba(6, 182, 212, 0.85)), url('landingpage.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .overlay-container {
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 30px 35px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      max-width: 550px;
+      width: 90%;
+      animation: fadeInScaleUp 0.7s ease-out forwards;
+    }
+
+    .logo-text {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.8em;
+      color: #ffffff;
+      margin-bottom: 20px;
+      line-height: 1;
+    }
+
+    h1 {
+      font-weight: 700;
+      font-size: 2em;
+      margin-bottom: 15px;
+      color: #f59e0b;
+      /* Accent orange */
+    }
+
+    p.subtitle {
+      font-size: 1.05em;
+      line-height: 1.6;
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    .contact-methods {
+      margin-bottom: 30px;
+    }
+
+    .contact-methods p {
+      margin: 8px 0;
+      font-size: 1.05em;
+    }
+
+    .contact-methods a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    .contact-methods a:hover {
+      color: #f59e0b;
+    }
+
+    .whatsapp-button {
+      display: inline-block;
+      /* Changed from inline-flex if no icon */
+      background-color: #25D366;
+      /* WhatsApp green */
+      color: white;
+      padding: 10px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      font-size: 0.95em;
+    }
+
+    .whatsapp-button:hover {
+      background-color: #1DAE52;
+    }
+
+    /* Removed .whatsapp-button svg styles as SVG is removed */
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    form input,
+    form textarea {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background-color: rgba(255, 255, 255, 0.15);
+      color: white;
+      font-size: 0.95em;
+      box-sizing: border-box;
+    }
+
+    form input::placeholder,
+    form textarea::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    form button {
+      padding: 12px 20px;
+      border-radius: 8px;
+      border: none;
+      background-color: #f59e0b;
+      /* Accent orange */
+      color: #334155;
+      /* Darker text for contrast on orange */
+      font-weight: 700;
+      font-size: 1em;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    form button:hover {
+      background-color: #fca120;
+      /* Lighter orange on hover */
+    }
+
+    #form-status {
+      margin-top: 15px;
+      font-size: 0.9em;
+      min-height: 1.2em;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      font-size: 0.8em;
+      opacity: 0.6;
+      color: white;
+    }
+
+    @keyframes fadeInScaleUp {
+      from {
+        opacity: 0;
+        transform: translateY(15px) scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay-container">
+    <div class="logo-text">Chillout.Camp</div>
+
+    <h1>Ny Nettside Kommer Snart!</h1>
+
+    <div class="contact-methods">
+      <p class="subtitle">Vi gleder oss til å vise deg hva vi har jobbet med. <br>Imens, ikke nøl med å ta kontakt!</p>
+      <p><a href="tel:+4797637065">+47 976 37 065</a></p>
+      <p><a href="mailto:post@chillout.camp">post@chillout.camp</a></p>
+      <a href="https://wa.me/4797637065?text=Hei%20ChilloutCamp!%20Jeg%20har%20et%20spørsmål." class="whatsapp-button"
+        target="_blank" rel="noopener noreferrer">
+        Chat på WhatsApp
+      </a>
+    </div>
+
+    <form id="contactForm" action="https://formspree.io/f/xrbqwkpe" method="POST">
+      <input type="text" name="name" placeholder="Ditt Navn" required>
+
+      <input type="email" name="_replyto" placeholder="Din E-post" required>
+      <textarea name="message" rows="4" placeholder="Din Melding..." required></textarea>
+
+      <input type="hidden" name="_subject" value="Henvendelse fra 'Kommer Snart' siden">
+      <button type="submit">Send Melding</button>
+    </form>
+    <p id="form-status"></p>
+
+  </div>
+  <footer>
+    ©
+    <script>document.write(new Date().getFullYear())</script> ChilloutCamp AS. Alle rettigheter reservert.
+  </footer>
+
+  <script>
+    const form = document.getElementById('contactForm');
+    async function handleSubmit(event) {
+      event.preventDefault();
+      const status = document.getElementById('form-status');
+      const data = new FormData(event.target);
+      status.innerHTML = "Sender..."; // Provide immediate feedback
+      status.style.color = 'white';
+
+      try {
+        const response = await fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+        if (response.ok) {
+          status.innerHTML = "Takk for meldingen! Vi kontakter deg snart.";
+          status.style.color = '#f59e0b'; // Accent orange for success
+          form.reset();
+        } else {
+          // Try to parse error from Formspree if response not OK
+          response.json().then(data => {
+            if (data && data.errors) { // Formspree often returns errors in a 'errors' array
+              status.innerHTML = data.errors.map(error => error.message || 'Feil').join(", ");
+            } else if (data && data.error) { // Sometimes a single 'error' string
+              status.innerHTML = data.error;
+            }
+            else {
+              status.innerHTML = "Oisann! Noe gikk galt med innsendingen (ukjent feil).";
+            }
+            status.style.color = '#ff6b6b'; // A reddish error color
+          }).catch(error => {
+            // This catch is for if response.json() itself fails (e.g., response isn't valid JSON)
+            status.innerHTML = "Oisann! Noe gikk galt med innsendingen (feil format på svar).";
+            status.style.color = '#ff6b6b';
+          });
+        }
+      } catch (error) {
+        // This catch is for network errors, etc.
+        status.innerHTML = "Oisann! Noe gikk galt. Sjekk internettforbindelsen din og prøv igjen.";
+        status.style.color = '#ff6b6b';
+      }
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
+</body>
+
+</html>
